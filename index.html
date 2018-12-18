@@ -1,0 +1,298 @@
+<!DOCTYPE html>
+<html>
+
+
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+  </head>
+
+
+<body>
+  <div class="container_12">
+
+    <div class="grid_12 header">
+
+      <div class="stitle">
+        <a href="./"><span class="gred">C</span><span class="gblue">Gi</span>TEC</a>
+        <span class="small"> New Idea for Radiation Safety and Applications</span>
+      </div>
+
+      <div class="logo">
+        <p class="h1">POLARIS</p>
+        <p class="h2">GAMMA-RAY IMAGING SPECTROMETERS</p>
+        <p class="h2">CdZnTe 실시간 방사선 이미징 검출기</p><br>
+      </div>
+
+ 
+
+      <!-- MENU -->
+      <nav>
+      <ul>
+        <li><a href="./">Home</a></li>
+        <li class="dropdown">
+<!--          <a href="javascript:void(0)" class="dropbtn">Products</a> -->
+          <a href="./product-h.html" class="dropbtn">Products</a>
+          <div class="dropdown-content">
+            <a href="./product-h.html">H Series</a>
+            <a href="./product-a.html">A Series</a>
+            <a href="./product-p.html">P Series</a>
+            <a href="./product-s.html">S Series</a>
+      <!--  <a href="./product-m.html">M Series</a> -->
+          </div>
+        </li>
+        <li><a href="./contact-us.html">Contact Us</a></li>
+
+      <!--  <li class="dropdown">
+          <a href="javascript:void(0)" class="dropbtn">News</a>
+          <div class="dropdown-content">
+            <a href="#">Technology Board</a>
+        <a href="#">Link 2</a>
+            <a href="#">Link 3</a>
+            <a href="#">Link 4</a>
+          </div>
+        </li> -->
+
+
+      </ul>
+      </nav>
+
+
+    </div>
+    <div class="clear"></div>
+
+    <div class="section0">
+       <div class="grid_12">
+
+         <!-- Slideshow container -->
+         <div class="slideshow-container">
+
+           <!-- Full-width images with number and caption text -->
+
+
+           <div class="mySlides fade">
+             <img src="./img/reactor.jpg" style="width:100%;">
+             <div class="text">
+               <p>실시간 방사선원 위치추적</p>
+             </div>
+           </div>
+
+           <div class="mySlides fade">
+             <img src="./img/logo-2.jpg" style="width:100%;">
+             <div class="text">방사선원 자동판별 및 간편한 사용</div>
+           </div>
+
+           <div class="mySlides fade">
+             <img src="./img/logo-3.jpg" style="width:100%;">
+             <div class="text">환경방사선 측정(일본 후쿠시마)</div>
+           </div>
+
+           <!-- Next and previous buttons -->
+           <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+           <a class="next" onclick="plusSlides(1)">&#10095;</a>
+         </div>
+
+         <!-- The dots/circles -->
+         <div style="text-align:center">
+           <span class="dot" onclick="currentSlide(1)"></span>
+           <span class="dot" onclick="currentSlide(2)"></span>
+           <span class="dot" onclick="currentSlide(3)"></span>
+         </div>
+
+         <script>
+         var slideIndex = 1;
+         showSlides(slideIndex);
+
+         function plusSlides(n) {
+           showSlides(slideIndex += n);
+         }
+
+         function currentSlide(n) {
+           showSlides(slideIndex = n);
+         }
+
+         function showSlides(n) {
+           var i;
+           var slides = document.getElementsByClassName("mySlides");
+           var dots = document.getElementsByClassName("dot");
+           if (n > slides.length) {slideIndex = 1}
+           if (n < 1) {slideIndex = slides.length}
+           for (i = 0; i < slides.length; i++) {
+               slides[i].style.display = "none";
+           }
+           for (i = 0; i < dots.length; i++) {
+               dots[i].className = dots[i].className.replace(" active", "");
+           }
+           slides[slideIndex-1].style.display = "block";
+           dots[slideIndex-1].className += " active";
+         }
+         </script>
+
+
+       </div>
+       <div class="clear"></div>
+    </div>
+
+    <div class="grid_12 texts">
+      <p>POLARIS 실시간 방사선 이미징 이란 ? </p>
+    </div>
+    <div class="clear"></div>
+
+ <div class="section1">
+    <div class="grid_6 principles">
+      <p>3-D Position Sensing 기술을 이용한 실시간 방사선 이미징 장치인 POLARIS Series 검출기는 우수한 에너지 분해능과
+      자동화된 스펙트럼 분석으로 방사선의 종류와 세기를 정확하게 판별하는 최첨단의 상온반도체 방사선 검출기입니다.
+       볼 수 없는 감마선 (invisible gamma-ray)을 실시간으로 시각화하여 방사선 작업자가
+       방사선 위험에 효과적으로 대처할 수 있도록 직관적인 정보를 제공합니다.</p>
+
+       <br><br><img src="./img/spectra.png" width="350px" height="250px">
+
+    </div>
+
+    <div class="grid_6 principles">
+      <br><img src="./img/pump.png" width="400px"><br>
+    </div>
+
+    <div class="clear"></div>
+  </div>
+
+
+
+<!-- section 5 -->
+<div class="grid_12 texts">
+  <p> 3-D Position Sensing 기반 CdZnTe 상온반도체 검출기 시리즈 </p>
+</div>
+<div class="clear"></div>
+
+  <div class="section5">
+     <div class="grid_12 intro">
+
+       <div class="gallery">
+         <a href="./product-h.html">
+           <img src="./img/h-series2.jpg" width="300" height="200">
+         </a>
+         <div class="desc"><p>H Series </p>Industrial Imaging Spectrometer</div>
+       </div>
+
+       <div class="gallery">
+         <a href="./product-a.html">
+           <img src="./img/a-series2.jpg" alt="Forest" width="300" height="200">
+         </a>
+         <div class="desc"><p>A Series </p>Handheld Radioisotope Identification Device</div>
+       </div>
+
+       <div class="gallery">
+         <a href="./product-p.html">
+           <img src="./img/p-series2.jpg" alt="Northern Lights" width="300" height="200">
+        </a>
+         <div class="desc"><p>P Series</p>Directional Gamma-Ray Imaging Spectrometer</div>
+       </div>
+
+       <div class="gallery">
+         <a href="./product-s.html">
+           <img src="./img/s-series2.jpg" alt="Mountains" width="300" height="200">
+        </a>
+         <div class="desc"><p>S Series</p>Permanent-Mount Spectrometer</div>
+       </div>
+
+
+
+      </div>
+
+<!-- Under construction -->
+       <div class="grid_12 intro">
+
+
+
+       <div class="gallery">
+           <img src="./img/m-series.jpg" alt="Mountains" width="300" height="200">
+         <div class="nyet"><p>M Series</p>Exclusive Medical Field Spectrometer</div>
+       </div>
+
+
+
+
+
+     </div>
+     <div class="clear"></div>
+  </div>
+
+
+  <div class="grid_12 texts">
+    <p>활 용 분 야</p>
+  </div>
+
+  <div class="grid_12 applications">
+    <img src="./img/appl_npp.jpg" alt="Mountains" width="300px" height="200px">
+    <h3>원자력발전소 및 방사성 폐기물 안전관리</h3>
+    <p>
+      <ul>
+        <li>H Series는 현재 미국 내 전체 원자력발전소 중
+        ~60% 이상이 방사선 안전을 위해 활발하게 사용하고 있습니다.</li>
+        <li>H Series 와 P Series 는 방사선 안전을 위한 가장 훌륭한 솔류션입니다.
+        원자력발전소와 같은 방사선 환경에서 사용되는 <a class="big_link" href="">[ 16가지 예제 (준비중) ]</a>를 확인해보세요.</li>
+        <li>S Series 는 특정위치에서 방사선원의 변화를 지속적으로 모니터링 하는데 최적화되어 있습니다.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="grid_12 applications">
+    <img src="./img/appl_security.jpg" alt="Mountains" width="300px" height="200px">
+    <h3>테러방지를 위한 공항 및 항만 보안검색</h3>
+    <p>
+      <ul>
+        <li>3-D Position Sensing 상온반도체 검출기 Series는 무게가 2-3 kg에 불과하여 운반이 용이한 장치입니다.
+            그러나 HPGe급에 버금가는 에너지분해능을 갖고 있어 감마선원의 종류와 위치를 실수없이 찾을 수 있습니다.</li>
+        <li>미국 DOD DTRA 의 재정지원을 받아 개발된 3-D Position Sensing 상온반도체 검출기 시리즈는 보안검색에 최고의 솔류션을 제공합니다.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="grid_12 applications">
+    <img src="./img/appl_enviro.jpg" alt="Mountains" width="300px" height="200px">
+    <h3>환경방사선 추적 및 감시</h3>
+    <p>
+      <ul>
+        <li>POLARIS 검출기 Series는 3-D Position Sensing 기반의 감마선 영상기법을 개발하여 검출기가 실시간으로 감마선 영상을
+          만들 수 있도록 감마선 이미징 시간을 획기적으로 단축하였습니다.</li>
+        <li>POLARIS 검출기는 후쿠시마 현지에서 직접 측정실험을 수행하여 환경방사선의 추적 및 감시에 용이함을 증명하였습니다.
+          생생한 <a class="big_link" href="#">[ 후쿠시마 지역 측정자료 (준비중) ]</a>를 확인해보세요.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="grid_12 applications">
+    <img src="./img/appl_medical.jpg" alt="Mountains" width="300px" height="200px">
+    <h3>의료방사선 안전관리</h3>
+    <p>
+      <ul>
+        <li>방사선은 산업현장이나 의료분야 등 광범위하게 활용되고 있지만 안전 측면에서는
+            여전히 매우 많은 점들이 간과되고 있습니다. </li>
+        <li>POLARIS 검출기는 의료현장에서 사용되고 있는 방사선을 사용자가 직관적으로 판단할 수 있도록
+            생생한 시각정보를 제공합니다. 이를 통해 환자뿐만 아니라 의사나 간호사 등 의료종사자가 방사선 피폭에
+            노출되지 않도록 방사선 안전의 최고 솔류션을 제공할 수 있습니다.</li>
+      </ul>
+    </p>
+  </div>
+
+  <div class="clear"></div>
+
+
+
+    <div class="grid_12 footer">
+    		Copyrights &copy; 2014 CGITEC <br />
+            씨지텍, 34187 대전광역시 유성구 계룡로141번길 29-25, (TEL: +82-42-825-1838)<br />
+            CGITEC, 29-25, Gyeryong-ro 141beon-gil, Yuseong-gu, Daejeon 34187, Korea
+    </div>
+    <div class="clear"></div>
+
+
+  </div>
+
+
+
+
+</body>
+</html>
